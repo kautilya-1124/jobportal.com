@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naukarifinder.com</title>
+    <link rel="icon" href="img/channels4_profile-removebg-preview (1).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css"> 
+   
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+<script>
+  let currentSlide = 0;
+  const cardsToShow = 3; // Number of cards to show in one row
+  const totalCards = document.querySelectorAll('.card').length;
+
+  function showSlide(index) {
+      const cards = document.getElementById("cards");
+      if (index >= totalCards - cardsToShow + 1) {
+          currentSlide = 0; // Loop back to the start
+      } else if (index < 0) {
+          currentSlide = totalCards - cardsToShow; // Go to the last set of cards
+      } else {
+          currentSlide = index;
+      }
+
+      cards.style.transform = `translateX(-${currentSlide * (100 / 3)}%)`;
+  }
+
+  function nextSlide() {
+      showSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+      showSlide(currentSlide - 1);
+  }
+
+  // Optional: Automatic slide change every 3 seconds
+  setInterval(nextSlide, 3000);
+</script>
+
+</head>
+<body>
+    <!-- outer start -->
+    <div class="container-fluid">
+        
+        
+        <!-- nav bar start -->
+         <div class="row sticky-top " style="background-color: white;">
+          <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a href="index.html"><img src="img/naukri_gnb_logo.png" alt="" width="auto"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                          <li class="nav-item ms-4">
+                            <a class="nav-link active " aria-current="page" href="index.html"><b>Jobs</b></a>
+                          </li>
+                          <li class="nav-item ms-4">
+                            <a class="nav-link  active" href="#"><b>Companies</b></a>
+                          </li>
+                          <li class="nav-item ms-4">
+                            <a class="nav-link active" href="contactus.html"><b>Contact Us</b></a>
+                          </li>
+                          
+                          
+                        </ul>
+                        <div>
+                        <button class="btn btn-outline  me-2 border border-primary text-primary"><a href="login.html" style="text-decoration: none; ">Login</a></button>
+                          <button class="btn btn-outline text-light  " style="background-color: #f05537;"><a href="ragistration.html" style="text-decoration: none; color: white;">Register</a></button></div>
+                          
+                          
+                        
+
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="col-sm-1"></div>
+         </div>
+        <!-- nav bar end -->
+
+        <!-- find your dream job start -->
+         <div class="row ">
+          <div class="col-sm-12">
+            <div class="row ">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6 find-job">
+                <h1 class="find-job libre-baskerville-regular libre-baskerville-bold me-5 text-center">Find your dream job now</h1>
+                <h4 class="me-4 text-center">5 lakh+ jobs for you to explore</h4>
+              </div>
+            </div>
+          </div>
+         </div>
+        <!-- find your dream job end -->
+
+        <!-- search start -->
+         <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <form class="d-flex box-search" role="search">
+              <input class="form-control " type="search" placeholder="Enter skills / designations / companies 
+              " aria-label="Search">
+              <button-1 class="btn btn-outline bg-primary text-light" type="submit">Search
+            
+
+            </button-1></form></div>
+        
+          
+          
+          <div class="col-sm-2"></div>
+         </div>
+        <!-- search end -->
+         <!-- banner start -->
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 mt-5">
+              <img src="img/tag.png" alt="" class="h-100 w-100">
+              
+            </div>
+            <div class="col-sm-2"></div>
+          </div>
+         <!-- banner end -->
+        <!-- button start -->
+         <div class="row mt-5">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <div class="btn">
+              <button class="btn text-dark ms-5 " style="height: 60px; border-color: lightgray; color: dark;"> <i class="fa-solid fa-house  "></i>Remote <i class="fa-solid fa-angle-right" style="color: lightgray;"></i></button>
+              <button class="btn  text-dark ms-4 " style="height: 60px; border-color: lightgray; color: dark;"> <i class="fa-solid fa-building  "></i>MNC <i class="fa-solid fa-angle-right" style="color: lightgray;"></i> </button>
+              <button class="btn  text-dark ms-3 " style="height: 60px; border-color: lightgray; color: dark;"> <i class="fa-solid fa-arrow-trend-up"></i>Marketing <i class="fa-solid fa-angle-right" style="color: lightgray;"></i> </button>
+              <button class="btn  text-dark ms-3 " style="height: 60px; border-color: lightgray; color: dark;"> <i class="fa-solid fa-box-open  "></i>Supply Cha... <i class="fa-solid fa-angle-right" style="color: lightgray;"></i> </button>
+              <button class="btn  text-dark ms-4 " style="height: 60px; border-color: lightgray; color: dark;"><i class="fa-solid fa-award  "></i>Fortune 500 <i class="fa-solid fa-angle-right" style="color: lightgray;"></i> </button>
+              <button class="btn  text-dark ms-5 " style="height: 60px; border-color: lightgray; color: dark;"> <i class="fa-solid fa-indian-rupee-sign  "></i>Banking &amp; ... <i class="fa-solid fa-angle-right" style="color: lightgray;"></i> </button>
+
+
+            </div>
+          </div>
+          <div class="col-sm-1"></div>
+         </div>
+        <!-- button end -->
+
+        <!-- button 2 start -->
+         <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-10">
+            <button class="btn  text-dark ms-5 " style="height: 60px; border-color: lightgray; color: dark;"> <i class="fa-solid fa-user-group"></i> HR  <i class="fa-solid fa-angle-right" style="color: lightgray;"></i></button>
+              <button class="btn  text-dark ms-4 " style="height: 60px; border-color: lightgray; color: dark;"> <i class="fa-solid fa-display"></i> Software &amp;...  <i class="fa-solid fa-angle-right" style="color: lightgray;"></i> </button>
+              <button class="btn  text-dark ms-3 " style="height: 60px; border-color: lightgray; color: dark;"> <i class="fa-solid fa-gear"></i> Engineering  <i class="fa-solid fa-angle-right" style="color: lightgray;"></i> </button>
+              <button class="btn  text-dark ms-3 " style="height: 60px; border-color: lightgray; color: dark;"> <i class="fa-regular fa-circle-check"></i> Project mg...  <i class="fa-solid fa-angle-right" style="color: lightgray;"></i> </button>
+              <button class="btn  text-dark ms-4 " style="height: 60px; border-color: lightgray; color: dark;"><i class="fa-solid fa-magnifying-glass-chart"></i> Analytics <i class="fa-solid fa-angle-right" style="color: lightgray;"></i> </button>
+
+          </div>
+          <div class="col-sm-2"></div>
+         </div>
+        <!-- button 2 end -->
+
+        <!-- top companies start -->
+         <div class="row mt-5">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10 text-center">
+            <h2 class="headline libre-baskerville-bold ">Top companies hiring now</h2>
+          </div>
+          <div class="col-sm-1"></div>
+         </div>
+        <!-- top companies end -->
+         <!-- companines card start -->
+          <div class="row mt-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 d-flex">
+              <div class="carousel d-flex">
+              <div class="card2" id="cards" style="width: 16rem; transform: translateX(0%);">
+                <div class="card-body">
+                  <h6 class="card-title">MNCs <i class="fa-solid fa-angle-right" style="color: lightgray;"></i></h6>
+                  <p class="card-subtitle mb-2 text-body-secondary small" style="font-size: 12px;">2K+ are actively hiring</p>
+                  <div><div><img src="img/1208134.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/4389230.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/4582799.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/4663807.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px; "></div>
+                  <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+                </div>
+              </div>
+            </div>
+              <div class="card2 ms-3" style="width: 16rem;">
+                <div class="card-body">
+                  <h6 class="card-title">Fintech <i class="fa-solid fa-angle-right" style="color: lightgray;"></i></h6>
+                  <p class="card-subtitle mb-2 text-body-secondary small" style="font-size: 12px;">113 are actively hiring</p>
+                  <div><div><img src="img/4102496.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/1499810.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/6051393.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/9239375.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px; "></div>
+                  <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+                </div>
+              </div>
+            </div>
+              <div class="card2 ms-3" style="width: 16rem;">
+                <div class="card-body">
+                  <h6 class="card-title">FMCG &amp; Retail <i class="fa-solid fa-angle-right" style="color: lightgray;"></i></h6>
+                  <p class="card-subtitle mb-2 text-body-secondary small" style="font-size: 12px;">129 are actively hiring</p>
+                  <div><div><img src="img/1007842.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/760178.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/1007842.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/321040.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px; "></div>
+                  <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+                </div>
+              </div>
+            </div>
+              <div class="card2 ms-3" style="width: 16rem;">
+                <div class="card-body">
+                  <h6 class="card-title">FMCG &amp; Retail <i class="fa-solid fa-angle-right" style="color: lightgray;"></i></h6>
+                  <p class="card-subtitle mb-2 text-body-secondary small" style="font-size: 12px;">129 are actively hiring</p>
+                  <div class="mb-3"><div><img src="img/1007842.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/760178.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/1007842.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px;">
+                  <img src="img/321040.gif" alt="" height="35px" class="ms-2 border border-outline rounded " style="margin-bottom: -12px; "></div>
+                  <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+                </div>
+              </div>
+            </div>
+              
+              
+             
+            
+              
+          </div>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+         <!-- companines card end -->
+
+         <!-- feature of companines start -->
+          <div class="row mt-5">
+            <div class="col-sm-12 text-center">
+              <h2 class="headline libre-baskerville-bold ">Featured companies actively hiring</h2>
+            </div>
+          </div>
+         <!-- feature of companines end -->
+
+         <!-- featured companies button start -->
+          <div class="row mt-4">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text-center">
+              <button class="btn  shadow-lg rounded-pill " style="width: 50px; height: 35px; border-color: rgb(134, 133, 133); color: rgb(75, 74, 74);">
+                All
+              </button>
+              <button class="btn  shadow-lg rounded-pill   ms-2" style="width: 100px; font-size: small; height: 35px; border-color: rgb(134, 133, 133); color: rgb(75, 74, 74);">
+                IT Services
+              </button>
+              <button class="btn  shadow-lg rounded-pill  ms-2 " style="width: 60px; height: 35px; border-color: rgb(134, 133, 133);color: rgb(75, 74, 74);">
+                BFSI
+              </button>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+         <!-- featured companies button end -->
+
+         <!-- featured companines cards start -->
+          <div class="row mt-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 d-flex">
+              <div class="container d-flex">
+              <div class="card4 card-h  shadow-lg p-3 mb-5 bg-body-tertiary rounded " id="cards" style="width: auto; height: auto;">
+                <div class="card-body text-center  ">
+                  <img src="img/4156-removebg-preview.png" alt="" class="h-auto w-auto">
+                  <div class="text-center mt-3  " style="background-color: rgb(245, 242, 242);height:95px;  border-radius: 5%;">
+                  <p class="card-subtitle   mt-3 text-body-secondary " style="font-size: 15px;"><b>Cognizant</b></p>
+                  <p class="small mt-3 " style="font-size: 12px; color: rgb(102, 101, 101);"><i class="fa-solid fa-star" style="color: rgb(247, 211, 11);"></i> 3.4 | 45.6K+ reviews</p>
+                </div>
+                  <div class="mt-2">
+                    <p class="" style="font-size: 14px; color: rgb(87, 87, 87);">Leading ITeS company with <br>global presence.</p>
+                  
+                </div>
+                <div>
+                  <button class="text-primary btn border rounded-pill " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 15px;height: auto;width: auto;  ">
+                    <span class="libre-baskerville-bold">Views jobs</span>
+                  </button>
+                  <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="card4 ms-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width: auto; height: auto;">
+                <div class="card-body text-center">
+                  <img src="img/8270081-removebg-preview.png" alt="" class="h-auto w-auto">
+                  <div class="text-center mt-3 " style="background-color: rgb(245, 242, 242); height:95px; border-radius: 5%;">
+                  <p class="card-subtitle   mt-3 text-body-secondary " style="font-size: 15px;"><b>VXI Global Solution <br>LLC</b></p>
+                  <p class="small mt-3 mb-3" style="font-size: 12px; color: rgb(102, 101, 101);"><i class="fa-solid fa-star" style="color: rgb(247, 211, 11);"></i> 3.7 | reviews</p>
+                </div>
+                  <div class="mt-2">
+                    <p class="" style="font-size: 14px; color: rgb(87, 87, 87);">NO.1 Customer Care Solution <br>Provider.</p>
+                  
+                </div>
+                <div>
+                  <button class="text-primary btn border rounded-pill " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 15px; height: auto;width: auto; ">
+                    <span class="libre-baskerville-bold">Views jobs</span>
+                  </button>
+                  <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="card4 ms-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width: auto; height: auto;">
+                <div class="card-body text-center">
+                  <img src="img/240936-removebg-preview.png" alt="" class="h-auto w-auto">
+                  <div class="text-center mt-3 " style="background-color: rgb(245, 242, 242); height:95px;border-radius: 5%;">
+                  <p class="card-subtitle   mt-3 text-body-secondary " style="font-size: 15px;"><b>JPMorgan Chase <br>Bank</b></p>
+                  <p class="small mt-3 mb-3" style="font-size: 12px; color: rgb(102, 101, 101);"><i class="fa-solid fa-star" style="color: rgb(247, 211, 11);"></i> 3.4 | 45.6K+ reviews</p>
+                </div>
+                  <div class="mt-2">
+                    <p class="" style="font-size: 14px; color: rgb(87, 87, 87);">Leading ITeS company with <br>global presence.</p>
+                  
+                </div>
+                <div>
+                  <button class="text-primary btn border rounded-pill " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 15px;height: auto; width: auto; ">
+                    <span class="libre-baskerville-bold">Views jobs</span>
+                  </button>
+                  <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+                </div>
+              </div>
+            </div>
+
+             
+
+            </div>
+            
+          </div>
+          
+            <div class="col-sm-1"></div>
+          </div>
+         <!-- featured companines cards end-->
+
+         <!-- views all companines button start -->
+          <div class="row mt-5">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text-center ">
+              <div class=" ">
+              <button class="  text-primary btn border rounded-pill border-primary " style=" font-size: 15px;height: auto; width: auto; ">
+                <span class="libre-baskerville-bold">Views all companies</span>
+              </button>
+            </div>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+         <!-- views all companines button end -->
+
+         <!-- introducing a career platform for a companines start -->
+          <!-- <div class="row mt-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10" style="align-items: center;">
+              <div class="card" style="height: 180px;">
+                <div class="card-body d-flex">
+                  <div>
+                    <img src="img/Screenshot_2024-10-16_113248-removebg-preview (1).png" alt=""   class=" introducing-a-career h-25">  
+                </div>
+                  <div class="mt-3">
+                  <h4 class="intro-a-career">Introducing a career platform for college students & fresh grads</h4>
+                  <p class="intro-p w-auto">Explore contests, webinars, take aptitude test, prepare for your dream <br> career & find jobs & internships</p>
+                  <div class="d-flex mt-3">
+                  <p class="border rounded-pill text-center ms-2 text-dark p-1" style="width: auto; font-size: small;height: 30px;"> Expert speak <i class="fa-solid fa-chevron-right"></i> </p>
+                  <p class="border rounded-pill text-center ms-2 text-dark p-1" style="width: auto; font-size: small;height: 30px;"> Contests <i class="fa-solid fa-chevron-right"></i> </p>
+                  <p class="border rounded-pill text-center ms-2 text-dark p-1" style="width: auto; font-size: small;height: 30px;"> NCAT  <i class="fa-solid fa-chevron-right"></i> </p>
+                  <p class="border rounded-pill text-center ms-2 text-dark p-1" style="width: auto; font-size:small;height: 30px;"> Pathfinder <i class="fa-solid fa-chevron-right"></i> </p>
+                  <p class="border rounded-pill text-center ms-2 text-dark p-1" style="width: auto; font-size: small;height: 30px;"> Jobs & Internships  <i class="fa-solid fa-chevron-right"></i> </p>
+                  
+                    
+                  
+                </div>
+                
+                </div>
+                <div class="mx-5 " style="margin-top: 70px;">
+                  <img src="img/naukri_gnb_logo.png" alt="" class="h-75">
+                </div>
+                
+              </div>
+            </div>
+            </div>
+            <div class="col-sm-1"></div>
+          </div> -->
+
+
+         <!-- introducing a career platform for a companines end -->
+
+          <!-- Discovery jobs start -->
+           <div class="row mt-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <div class="row mt-5">
+                 <div class="col-sm-12  position-relative rounded shadow-lg p-3 mb-5 bg-body-tertiary rounded " style="height: 300px;  ">
+                  <img src="img/Motion Graphics_ Laptop Animation - After Effects Tutorial Part 1.gif" alt="" style="overflow: hidden; height: 65%;">
+                  <p class="h-h">Discover jobs across popular roles</p>
+                  <p class="sub-h">Select a role and we'll show you relevant jobs for it!</p>
+                  <div class="position-absolute  border me-5  rounded shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="top:-10%; height: 350px; right:0%;width: auto;background-color: #fff7f0;  ">
+                    <div class="">
+                    <button class="btn btn-outline mt-4 shadow-lg" style="border-radius: 20px;"><p style="font-size: 14px; color: black; font-weight: 200px; font-family: satoshi,satoshi fallback;" class="">Full Stack Developer</p><p style="font-size: 12px; text-align: start; margin-top: -10px;">19.6k+ Jobs</p></button>
+                    <button class="btn btn-outline mt-4 shadow-lg ms-2" style="border-radius: 20px;"><p style="font-size: 14px; color: black; font-weight: 200px;" class=" ">Mobile/App Dev...</p><p style="font-size: 12px; text-align: start; margin-top: -10px;">19.6k+ Jobs</p></button>
+                    <br>
+                    <button class="btn btn-outline mt-3 shadow-lg" style="border-radius: 20px;"><p style="font-size: 14px; color: black; font-weight: 200px; font-family: satoshi,satoshi fallback;" class="">Front End Developer</p><p style="font-size: 12px; text-align: start; margin-top: -10px;">19.6k+ Jobs</p></button>
+                    <button class="btn btn-outline mt-3 shadow-lg ms-2" style="border-radius: 20px;"><p style="font-size: 14px; color: black; font-weight: 200px; font-family: satoshi,satoshi fallback;" class="">DevOps Engineer</p><p style="font-size: 12px; text-align: start; margin-top: -10px;">19.6k+ Jobs</p></button>
+                    <br>
+                    <button class="btn btn-outline mt-3 shadow-lg " style="border-radius: 20px;"><p style="font-size: 14px; color: black; font-weight: 200px; font-family: satoshi,satoshi fallback;" class="">Engineering Mana....</p><p style="font-size: 12px; text-align: start; margin-top: -10px;">19.6k+ Jobs</p></button>
+                    <button class="btn btn-outline mt-3 shadow-lg  ms-2" style="border-radius: 20px;"><p style="font-size: 14px; color: black; font-weight: 200px; font-family: satoshi,satoshi fallback;" class="">Technical Lead......</p><p style="font-size: 12px; text-align: start; margin-top: -10px;">19.6k+ Jobs</p></button>
+                    
+
+                  </div>
+
+                  </div>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-1"></div>
+           </div>
+          <!-- Discovery jobs END -->
+           <!-- Sponsored companies start -->
+            <div class="row mt-5">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-10">
+                <h2 class="headline libre-baskerville-bold text-center ">Featured companies actively hiring</h2>
+              </div>
+              <div class="col-sm-1"></div>
+            </div>
+           <!-- Sponsored companiesn end -->
+            <!-- s c buttons start -->
+             <div class="row mt-5">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-10 ">
+                
+                <button class="text-primary btn border rounded-pill me-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 15px;height: auto; width: auto; ">
+                  <span>All</span>
+                </button>
+                <button class="text-dark btn border rounded-pill me-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                  <span>IT Services</span>
+                </button>
+                <button class="text-dark btn border rounded-pill  me-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                  <span>Technology</span>
+                </button>
+                <button class="text-dark btn border rounded-pill me-2 " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                  <span>Manufacturing &amp; Production</span>
+                </button>
+                <button class="text-dark btn border rounded-pill  me-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                  <span>
+Healthcare &amp; Life Sciences</span>
+                </button>
+                <button class="text-dark btn border rounded-pill me-2 " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                  <span>Infrastructure, Transport &amp; Real Estate</span>
+                </button>
+                <button class="text-dark btn border rounded-pill  me-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                  <span>BFSI</span>
+                </button>
+                <button class="text-dark btn border rounded-pill  me-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                  <span>BPM</span>
+                </button>
+                
+              </div>
+              <div class="col-sm-1"></div>
+             </div>
+            <!-- s c buttons end -->
+              
+            <!-- sponsored companies cards start -->
+             <div class="row mt-5">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-10">
+                <div class="container d-flex">
+              <div class="card1-1 card-h  shadow-lg p-3 mb-5 bg-body-tertiary rounded " id="cards" style="width: auto; height: auto;">
+                <div class="card-body text-center  ">
+                  <img src="img/245362.gif" alt="" style="height: 10vh;">
+                  <div class="text-center mt-3" style="height:95px;  border-radius: 5%;">
+                  <p class="card-subtitle   mt-3 text-body-secondary " style="font-size: 15px;"><b>JK Cement</b></p>
+                  <p class="card-subtitle small mt-3 " style="font-size: 12px;"><i class="fa-solid fa-star" style="color: rgb(247, 211, 11);"></i> 3.4 | 45.6K+ reviews</p>
+                </div>
+                  <div class="">
+                    <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                      <span>Public</span>
+                    </button>
+                    <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                      <span>Corporate</span>
+                    </button>
+                    
+                    <button class="text-dark btn border rounded-pill mt-2 " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                      <span>Conglomerate</span>
+                    </button>
+                    <button class="text-dark btn border rounded-pill  mt-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                      <span>Building Material</span>
+                    </button>
+                </div>
+                <div>
+                  
+                  <div class="dimmer"></div>
+    <div class="go-corner-1" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card1-2 card-h  shadow-lg p-3 mb-5 bg-body-tertiary rounded " id="cards" style="width: auto; height: auto;">
+              <div class="card-body text-center  ">
+                <img src="img/4657707.gif" alt="" style="height: 10vh;">
+                <div class="text-center mt-3" style="height:95px;  border-radius: 5%;">
+                <p class="card-subtitle   mt-3 text-body-secondary " style="font-size: 15px;"><b>JK Cement</b></p>
+                <p class="card-subtitle small mt-3 " style="font-size: 12px;"><i class="fa-solid fa-star" style="color: rgb(247, 211, 11);"></i> 3.4 | 45.6K+ reviews</p>
+              </div>
+                <div class="">
+                  <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                    <span>Public</span>
+                  </button>
+                  <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                    <span>Corporate</span>
+                  </button>
+                  
+                  <button class="text-dark btn border rounded-pill mt-2 " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                    <span>Conglomerate</span>
+                  </button>
+                  <button class="text-dark btn border rounded-pill  mt-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                    <span>Building Material</span>
+                  </button>
+              </div>
+              <div>
+                
+                <div class="dimmer"></div>
+  <div class="go-corner-2" href="#">
+    <div class="go-arrow">
+      →
+    </div>
+  </div>
+              </div>
+            </div>
+          </div>
+          <div class="card1-3 card-h  shadow-lg p-3 mb-5 bg-body-tertiary rounded " id="cards" style="width: auto; height: auto;">
+            <div class="card-body text-center  ">
+              <img src="img/45178.gif" alt="" style="height: 10vh;">
+              <div class="text-center mt-3" style="height:95px;  border-radius: 5%;">
+              <p class="card-subtitle   mt-3 text-body-secondary " style="font-size: 15px;"><b>JK Cement</b></p>
+              <p class="card-subtitle small mt-3 " style="font-size: 12px;"><i class="fa-solid fa-star" style="color: rgb(247, 211, 11);"></i> 3.4 | 45.6K+ reviews</p>
+            </div>
+              <div class="">
+                <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                  <span>Public</span>
+                </button>
+                <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                  <span>Corporate</span>
+                </button>
+                
+                <button class="text-dark btn border rounded-pill mt-2 " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                  <span>Conglomerate</span>
+                </button>
+                <button class="text-dark btn border rounded-pill  mt-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                  <span>Building Material</span>
+                </button>
+            </div>
+            <div>
+              
+              <div class="dimmer"></div>
+<div class="go-corner-3" href="#">
+  <div class="go-arrow">
+    →
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="card1-4 card-h  shadow-lg p-3 mb-5 bg-body-tertiary rounded " id="cards" style="width: auto; height: auto;">
+          <div class="card-body text-center  ">
+            <img src="img/7395891.gif" alt="" style="height: 10vh;">
+            <div class="text-center mt-3" style="height:95px;  border-radius: 5%;">
+            <p class="card-subtitle   mt-3 text-body-secondary " style="font-size: 15px;"><b>JK Cement</b></p>
+            <p class="card-subtitle small mt-3 " style="font-size: 12px;"><i class="fa-solid fa-star" style="color: rgb(247, 211, 11);"></i> 3.4 | 45.6K+ reviews</p>
+          </div>
+            <div class="">
+              <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                <span>Public</span>
+              </button>
+              <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                <span>Corporate</span>
+              </button>
+              
+              <button class="text-dark btn border rounded-pill mt-2 " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                <span>Conglomerate</span>
+              </button>
+              <button class="text-dark btn border rounded-pill  mt-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+                <span>Building Material</span>
+              </button>
+          </div>
+          <div>
+            
+            <div class="dimmer"></div>
+<div class="go-corner-4" href="#">
+<div class="go-arrow">
+  →
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+      <div class="card1-5 card-h  shadow-lg p-3 mb-5 bg-body-tertiary rounded " id="cards" style="width: auto; height: auto;">
+        <div class="card-body text-center  ">
+          <img src="img/41608-unscreen.gif" alt="" style="height: 10vh;">
+          <div class="text-center mt-3" style="height:95px;  border-radius: 5%;">
+          <p class="card-subtitle   mt-3 text-body-secondary " style="font-size: 15px;"><b>JK Cement</b></p>
+          <p class="card-subtitle small mt-3 " style="font-size: 12px;"><i class="fa-solid fa-star" style="color: rgb(247, 211, 11);"></i> 3.4 | 45.6K+ reviews</p>
+        </div>
+          <div class="">
+            <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+              <span>Public</span>
+            </button>
+            <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+              <span>Corporate</span>
+            </button>
+            
+            <button class="text-dark btn border rounded-pill mt-2 " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+              <span>Conglomerate</span>
+            </button>
+            <button class="text-dark btn border rounded-pill  mt-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+              <span>Building Material</span>
+            </button>
+        </div>
+        <div>
+          
+          <div class="dimmer"></div>
+<div class="go-corner-5" href="#">
+<div class="go-arrow">
+→
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="card1-6 card-h  shadow-lg p-3 mb-5 bg-body-tertiary rounded " id="cards" style="width: auto; height: auto;">
+      <div class="card-body text-center  ">
+        <img src="img/84282-unscreen.gif" alt="" style="height: 10vh;">
+        <div class="text-center mt-3" style="height:95px;  border-radius: 5%;">
+        <p class="card-subtitle   mt-3 text-body-secondary " style="font-size: 15px;"><b>JK Cement</b></p>
+        <p class="card-subtitle small mt-3 " style="font-size: 12px;"><i class="fa-solid fa-star" style="color: rgb(247, 211, 11);"></i> 3.4 | 45.6K+ reviews</p>
+      </div>
+        <div class="">
+          <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+            <span>Public</span>
+          </button>
+          <button class="text-dark btn border rounded-pill  " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+            <span>Corporate</span>
+          </button>
+          
+          <button class="text-dark btn border rounded-pill mt-2 " style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+            <span>Conglomerate</span>
+          </button>
+          <button class="text-dark btn border rounded-pill  mt-2" style="background-color: #edf4ff; border: 1px solid #edf4ff;font-size: 13px;height: auto; width: auto; ">
+            <span>Building Material</span>
+          </button>
+      </div>
+      <div>
+        
+        <div class="dimmer"></div>
+<div class="go-corner-6" href="#">
+<div class="go-arrow">
+→
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+            </div>
+              </div>
+              <div class="col-sm-1"></div>
+             </div>
+            <!-- sponsored companies cards end -->
+
+             <!-- views all companines button start -->
+          <div class="row mt-5">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text-center ">
+              <div class=" ">
+              <button class="  text-primary btn border rounded-pill border-primary " style=" font-size: 15px;height: auto; width: auto; ">
+                <span class="libre-baskerville-bold">Views all companies</span>
+              </button>
+            </div>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+         <!-- views all companines button end -->
+
+         <!-- upcoming events and challenges headline start -->
+         <div class="row mt-5">
+          <div class="col-sm-12 text-center">
+            <h2 class="  headline libre-baskerville-bold ">Upcoming events and challenges</h2>
+          </div>
+        </div>
+         <!-- upcoming events and challenges headline end -->
+
+         <!-- Upcoming events and challenges start -->
+          <div class="row mt-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <section class="wrapper">
+               
+                  <div class="row">
+               <div class="col-sm-3 col-md-6 col-lg-4 mb-4 ">
+                 
+                 <div class="card text-dark card-has-bg click-col" style="background-image:url(img/download\ \(16\).jpg);">
+                       <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                      <div class="card-img-overlay d-flex flex-column">
+                       <div class="card-body">
+                          <small class="card-meta mb-2">Coding Ninjas</small>
+                          <h4 class="card-title mt-0 "><a class="text-dark" herf="https://creativemanner.com">Amazon SDE roles: Insider tips for transition</a></h4>
+                         <small><i class="far fa-clock"></i> 21 Oct, 7:00 PM</small>
+                        </div>
+                        <div class="card-footer">
+                         <div class="media">
+                <img class="mr-3 rounded-circle" src="img/4670525.gif" alt="Generic placeholder image" style="max-width:50px">
+                <div class="media-body">
+                  <h6 class="my-0 text-dark d-block">Coding Ninjas</h6>
+                   <small>Director of UI/UX</small>
+                </div>
+              </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 mb-4 ">
+                 <div class="card text-dark card-has-bg click-col" style="background-image:url(img/download\ \(14\).jpg);">
+                       <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                      <div class="card-img-overlay d-flex flex-column">
+                       <div class="card-body">
+                          <small class="card-meta mb-2">Coding Ninjas</small>
+                          <h4 class="card-title mt-0 "><a class="text-dark" herf="https://creativemanner.com">Yext React Hackathon Contest: Code to Career</a></h4>
+                         <small><i class="far fa-clock"></i> 21 Oct, 7:00 PM</small>
+                        </div>
+                        <div class="card-footer">
+                         <div class="media">
+                <img class="mr-3 rounded-circle" src="img/1007842.gif" alt="Generic placeholder image" style="max-width:50px">
+                <div class="media-body">
+                  <h6 class="my-0 text-dark d-block">Coding Ninjas</h6>
+                   <small>Director of UI/UX</small>
+                </div>
+              </div>
+                        </div>
+                      </div>
+                    </div>
+                      
+                 
+                 
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 mb-4 ">
+                 <div class="card text-dark card-has-bg click-col" style="background-image:url(img/download\ \(15\).jpg);">
+                       <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                      <div class="card-img-overlay d-flex flex-column">
+                       <div class="card-body">
+                          <small class="card-meta mb-2">Coding Ninjas</small>
+                          <h4 class="card-title mt-0 "><a class="text-dark" herf="https://creativemanner.com">Hiring Challenge for Senior Salesforce Developer</a></h4>
+                         <small><i class="far fa-clock"></i> 21 Oct, 7:00 PM</small>
+                        </div>
+                        <div class="card-footer">
+                         <div class="media">
+                <img class="mr-3 rounded-circle" src="img/4582799.gif" alt="Generic placeholder image" style="max-width:50px">
+                <div class="media-body">
+                  <h6 class="my-0 text-dark d-block">Coding Ninjas</h6>
+                   <small>Director of UI/UX</small>
+                </div>
+              </div>
+                        </div>
+                      </div>
+                    </div>
+                      
+                 
+                 
+                    </div>
+                    <!-- <div class="col-sm-3 col-md-6 col-lg-4 mb-4 ">
+                 <div class="card text-dark card-has-bg click-col" style="background-image:url(img/);">
+                       <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                      <div class="card-img-overlay d-flex flex-column">
+                       <div class="card-body">
+                          <small class="card-meta mb-2">Coding Ninjas</small>
+                          <h4 class="card-title mt-0 "><a class="text-dark" herf="https://creativemanner.com">Amazon SDE roles: Insider tips for transition</a></h4>
+                         <small><i class="far fa-clock"></i> 21 Oct, 7:00 PM</small>
+                        </div>
+                        <div class="card-footer">
+                         <div class="media">
+                <img class="mr-3 rounded-circle" src="img/4670525.gif" alt="Generic placeholder image" style="max-width:50px">
+                <div class="media-body">
+                  <h6 class="my-0 text-dark d-block">Coding Ninjas</h6>
+                   <small>Director of UI/UX</small>
+                </div>
+              </div>
+                        </div>
+                      </div>
+                    </div>
+                      
+                 
+                 
+                    </div> -->
+                  
+               
+                 
+                  
+                  
+               
+                
+              </div>
+                
+             
+              </section>
+              
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+
+
+         <!-- Upcoming events and challenges end -->
+
+         <!-- Prepare for your next interview start -->
+         <div class="row mt-5">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <div class="row mt-5">
+               <div class="col-sm-12  position-relative rounded shadow-lg p-3 mb-5 bg-body-tertiary rounded " style="height: 300px;  ">
+                <img src="img/comp_2.gif" alt="" style="overflow: hidden; height: 65%;">
+                <p class="h-h">Prepare for your next interview</p>
+                <p class="sub-h">Select a role and we'll show you relevant jobs for it!</p>
+                <div class="position-absolute  border me-5  rounded shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="top:-10%; height: 350px; right:0%;width: auto;background-color: #fff7f0;  ">
+                  <div class="d-flex">
+                  <button class="btn btn-outline mt-4 shadow-lg d-flex " style="border-radius: 20px; width: 10vw;"><img src="img/flipkart-ot.png" style="height: 6vh; width: auto;" alt=""><p style="font-size: 20px; color: black; font-weight: 200px; font-family: satoshi,satoshi fallback; overflow: hidden;" class="ms-2 mt-2">Flipkart </p></button>
+                  <button class="btn btn-outline mt-4 shadow-lg d-flex ms-2" style="border-radius: 20px; width: 10vw;"><img src="img/byjus-ot.png" style="height: 6vh; width: auto;" alt=""><p style="font-size: 20px; color: black; font-weight: 200px; font-family: satoshi,satoshi fallback; overflow: hidden;" class="ms-2 mt-2">Byjus </p></button>
+                </div>
+                  <br>
+                  <div class="d-flex">
+                  <button class="btn btn-outline mt-3 shadow-lg d-flex ms-2" style="border-radius: 20px; width: 10vw;"><img src="img/tcs-ot.png" style="height: 6vh;width: auto; " alt=""><p style="font-size: 20px; color: black; font-weight: 200px; font-family: satoshi,satoshi fallback;overflow: hidden;" class="ms-2 mt-2">TCS </p></button>
+                  <button class="btn btn-outline mt-3 shadow-lg d-flex ms-2" style="border-radius: 20px; width: 10vw;"><img src="img/accenture-ot.png" style="height: 6vh;width: auto;" alt=""><p style="font-size: 20px; color: black; font-weight: 200px; font-family: satoshi,satoshi fallback;overflow: hidden;" class="ms-2 mt-2">TCS </p></button>
+                  </div>
+                  <br>
+                  <div class="d-flex">
+                  <button class="btn btn-outline mt-3 shadow-lg d-flex ms-2" style="border-radius: 20px; width: 10vw;"><img src="img/cognizant-ot.png" style="height: 6vh; width: auto;" alt="image"><p style="font-size: 20px;overflow: hidden; color: black; font-weight: 200px; font-family: satoshi,satoshi fallback;" class="ms-2 mt-2">Cognizant </p></button>
+                  <button class="btn btn-outline mt-3 shadow-lg d-flex ms-2" style="border-radius: 20px; width: 10vw;"><img src="img/amazon-ot.png" style="height: 6vh; width: auto;" alt=""><p style="font-size: 20px; color: black; font-weight: 200px; font-family: satoshi,satoshi fallback; overflow: hidden;" class="ms-2 mt-2">Amazon </p></button>
+                </div>
+                  
+
+                
+
+                </div>
+               </div>
+            </div>
+          </div>
+          <div class="col-sm-1"></div>
+         </div>
+
+         <!-- Prepare for your next interview end -->
+
+
+         <!-- Accelerate your job search with premium services start -->
+          <div class="row mt-5 ">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <div class="box border bg-body-tertiary rounded shadow-lg rounded " style="width: 100%;height:auto;">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="text-center">
+                      <video src="img/umake_hp_hero.mp4" height="150px" width="auto" class="mt-5" autoplay="" loop="" muted=""></video>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start " style="overflow: hidden;">
+                      <p class="h-h" style="margin-top: 50px; font-size: large;color: black;font-weight:600;">
+                        Accelerate your job search with premium services</p>
+                        <p style="font-size: 15px;">Services to help you get hired, faster: from preparing your CV, getting <br> recruiter attention, finding the right jobs, and more!
+
+                        </p>
+                        <div class="mt-5">
+                        <button class="btn  shadow-lg rounded-pill mb-4 ms-2" style="width: 50px; height: 35px; border-color: rgb(134, 133, 133); color: rgb(75, 74, 74);">
+                          All
+                        </button>
+                        <button class="btn  shadow-lg rounded-pill  mb-4  ms-2" style="width: 100px; font-size: small; height: 35px; border-color: rgb(134, 133, 133); color: rgb(75, 74, 74);">
+                          IT Services
+                        </button>
+                        <button class="btn  shadow-lg rounded-pill  mb-4 ms-2 " style="width: 60px; height: 35px; border-color: rgb(134, 133, 133);color: rgb(75, 74, 74);">
+                          BFSI
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 ">
+                    <div style="margin-top: 80px;">
+                      <button class="btn  shadow-lg rounded-pill   ms-2 " style="width: auto; height:7vh; background-color: #275df5;color: white; ">
+                        Learn More
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+         <!-- Accelerate your job search with premium services end -->
+
+         <!-- footer start -->
+          <div class="row" style="margin-top: 100px;">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <div class="row">
+                <div class="col-sm-2">
+                  <div>
+                    <img src="img/naukri_gnb_logo.png" alt="">
+                    <p style="font-weight: bold;margin-top:60px ;color: black;">Connect with us</p>
+                    <span style="font-size: 20px; letter-spacing: 20px;color: #8292b4;"><i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-square-instagram"></i><i class="fa-brands fa-square-x-twitter"></i><i class="fa-brands fa-linkedin"></i></span>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="mt-2 text-start">
+                    <ul style="list-style-type: none;">
+                      <li class="li">About us</li>
+                        <li class="mt-3 li" style="">Careers</li>
+                        <li class="mt-3 li">Employer home</li>
+                       <li class="mt-3 li">Sitemap</li> 
+                       <li class="mt-3 li">Credits</li>
+                    </ul>
+                  </div>
+                  </div>
+                  <div class="col-sm-2">
+                  <div class="mt-2 text-start">
+                    <ul style="list-style-type: none;">
+                      <li class="li">Help center</li>
+                        <li class="mt-3 li" style="">Summons/Notices</li>
+                        <li class="mt-3 li">Grievances</li>
+                       <li class="mt-3 li">Report issue</li> 
+                       
+                    </ul>
+
+                  </div>
+                
+                </div>
+                  <div class="col-sm-2">
+                  <div class="mt-2 text-start">
+                    <ul style="list-style-type: none;">
+                      <li class="li">Privacy policy</li>
+                        <li class="mt-3 li" style="">Terms &amp; conditions</li>
+                        <li class="mt-3 li">Fraud alert</li>
+                       <li class="mt-3 li">Trust &amp; safety
+                      </li> 
+                       
+                    </ul>
+
+                  </div>
+                
+                </div>
+                <div class="col-sm-4">
+                  <div class="border rounded ps-4" style="height: auto;">
+                    <p class="apply   ">Apply on the go</p>
+                    <p style="font-size: 12px;">Get real-time job updates on our App</p>
+                    <div class="mb-4">
+                      <img src="img/android-app_v1.png" alt="">
+                      <img src="img/ios-app_v1.png" alt="">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-1"></div>
+            
+          
+          </div>
+          <div class="row mt-5">
+           <div class="col-1"></div>
+           <div class="col-10">
+            <hr>
+           </div>
+           <div class="col-1"></div>
+          </div>
+
+
+         <!-- footer end -->
+
+         <!-- sub footer start -->
+          <div class="row mt-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <div class="row">
+                <div class="col-sm-2">
+              <div>
+                <img src="img/infoedge-logo.jpg" alt="" height="30vh">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-start">
+                <p style="font-size: 12px; font-weight: lighter;">All trademarks are the property of their respective owners
+                  All rights reserved © 2024 Info Edge (India) Ltd.</p>
+              </div>
+
+            </div>
+            <div class="col-sm-2">
+              
+              <p>Our businesses</p>
+              </div>
+              <div class="col-sm-4">
+              <div>
+                <img src="img/jobhai.png" alt="" height="30vhvh">
+                <img src="img/jeevansathi.png" alt="" height="24vh">
+                <img src="img/minis.png" alt="" height="30vh">
+              </div>
+            </div>
+            </div>
+          </div>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+         <!-- sub footer end -->
+         
+
+         
+     
+
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- outer end-->
+    
+
+</body>
+</html>
